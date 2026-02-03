@@ -1,0 +1,26 @@
+:root{
+  --brand:#1e6f9f;
+  --accent:#2a9d8f;
+  --muted:#666;
+  --bg:#f7fafc;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:#0b2540}
+.container{max-width:980px;margin:0 auto;padding:1rem}
+.site-header{background:var(--brand);color:white;padding:.75rem 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header nav a{color:white;margin-left:1rem}
+.app-root h1{margin-top:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.card{background:white;padding:1rem;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.neighborhood-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin-top:.5rem}
+.neighborhood-card{background:white;padding:.75rem;border-radius:6px;border:1px solid #e6eef4}
+.calculator label{display:block;margin-bottom:.5rem}
+.calculator input{width:100%;padding:.5rem;border:1px solid #cddfe8;border-radius:4px}
+button{background:var(--accent);border:none;color:white;padding:.5rem 1rem;border-radius:4px}
+.result{margin-top:.75rem;background:#f0f9f8;padding:.5rem;border-radius:4px}
+.site-footer{margin-top:2rem;padding:1rem 0;background:#fff}
+
+@media(max-width:800px){
+  .grid{grid-template-columns:1fr}
+}
